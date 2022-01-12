@@ -23,6 +23,6 @@ from webapp import views
 
 
 urlpatterns = [
-    url(r'admin/', views.relative, name='relative'),
+    url(r'admin/', admin.site.urls),
     url(r'employees/', views.employeeList.as_view()),
 ]
